@@ -1,0 +1,19 @@
+# Secrets — never commit your real API key
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Vector database (regenerate by re-ingesting PDFs; keeps the repo small)
+data/chroma_db/
+
+# Uploaded source PDFs (may contain sensitive/private plan info)
+data/pdfs/*
+!data/pdfs/.gitkeep
+
+# OS/editor cruft
+.DS_Store
+.vscode/
